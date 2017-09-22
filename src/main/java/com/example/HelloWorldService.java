@@ -9,7 +9,7 @@ public class HelloWorldService {
 	@GET
 	@Path("/sayHello")
 	public String sayHello() {
-		return "Goodbye World";
+		return "Hello World";
 	}
  
 }
