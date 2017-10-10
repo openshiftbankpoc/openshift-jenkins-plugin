@@ -27,7 +27,7 @@
 						<id>default</id>
 						<goals>
 							<goal>build</goal>
-						<!--	<goal>push</goal> --!>
+						<!--	<goal>push</goal> -->
 						</goals>
 					</execution>
 				</executions><!--
@@ -35,7 +35,7 @@
 					<repository>stevelibonati/helloworld-eap-mvn</repository>
 					<tag>${project.version}</tag>
 <pushImage>true</pushImage>
-				</configuration> --!>
+				</configuration> -->
 			</plugin>
 		</plugins>
 		<finalName>helloworld-eap-mvn</finalName>
