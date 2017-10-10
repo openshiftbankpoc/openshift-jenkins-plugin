@@ -32,9 +32,16 @@
 					</execution>
 				</executions>
 				<configuration>
-				
+ <verbose>true</verbose>				
  <dockerDirectory>${project.basedir}</dockerDirectory>
         <imageName>ccbt/${project.artifactId}</imageName>
+<resources>
+<resource>
+                        <targetPath>/</targetPath>
+                        <directory>${project.build.directory}</directory>
+                        <include>helloworld-eap-mvn.war</include>
+</resource>
+</resources>
 </configuration> 
 			</plugin>
 		</plugins>
