@@ -30,12 +30,12 @@
 						<!--	<goal>push</goal> -->
 						</goals>
 					</execution>
-				</executions><!--
+				</executions>
 				<configuration>
-					<repository>stevelibonati/helloworld-eap-mvn</repository>
-					<tag>${project.version}</tag>
-<pushImage>true</pushImage>
-				</configuration> -->
+				
+ <dockerDirectory>${project.basedir}</dockerDirectory>
+        <imageName>ccbt/${project.artifactId}</imageName>
+</configuration> 
 			</plugin>
 		</plugins>
 		<finalName>helloworld-eap-mvn</finalName>
