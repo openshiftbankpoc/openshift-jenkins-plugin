@@ -1,2 +1,1 @@
-# helloworld-wildfly
-helloworld-wildfly
+# openshift-jenkins-plugin
