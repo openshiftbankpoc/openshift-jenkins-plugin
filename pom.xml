@@ -32,17 +32,15 @@
 					</execution>
 				</executions>
 				<configuration>
-<images>
-            <image>
-              <name>ccbt:helloworld-eap-mvn</name>
-              <build>
-                <dockerFileDir>${project.basedir}</dockerFileDir>
-                <assembly>
-                  <descriptorRef>artifact</descriptorRef>
-                </assembly>
-              </build>
-            </image>
-          </images>
+              <imageName>ccbt:helloworld-eap-mvn</imageName>
+<dockerDirectory>${project.basedir}</dockerDirectory>
+<resources>
+<resource>
+<targetPath>/</targetPath>
+<directory>${project.build.directory}</directory>
+<include>${project.build.finalName}.war</include>
+</resource>
+</resources>
 </configuration> 
 			</plugin>
 		</plugins>
