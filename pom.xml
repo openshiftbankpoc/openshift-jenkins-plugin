@@ -27,12 +27,12 @@
 						<id>default</id>
 						<goals>
 							<goal>build</goal>
-						<!--	<goal>push</goal> -->
+							<goal>push</goal> 
 						</goals>
 					</execution>
 				</executions>
 				<configuration>
-              <imageName>ccbt:helloworld-eap-mvn</imageName>
+              <imageName>stevelibonati/helloworld-eap-mvn</imageName>
 <dockerDirectory>${project.basedir}</dockerDirectory>
 <resources>
 <resource>
