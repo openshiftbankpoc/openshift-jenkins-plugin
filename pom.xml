@@ -33,8 +33,7 @@
 				</executions>
 				<configuration>
  <serverId>docker-hub</serverId>
-      <registryUrl>hub.docker.com/stevelibonati</registryUrl>
-              <imageName>stevelibonati/helloworld-eap-mvn</imageName>
+              <imageName>hub.docker.com/stevelibonati/helloworld-eap-mvn</imageName>
 <dockerDirectory>${project.basedir}</dockerDirectory>
 </configuration> 
 			</plugin>
