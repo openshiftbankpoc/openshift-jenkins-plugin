@@ -27,20 +27,13 @@
 						<phase>package</phase>
 						<goals>
 							<goal>build</goal>
-							<goal>push</goal> 
+					<!--		<goal>push</goal> --> 
 						</goals>
 					</execution>
 				</executions>
 				<configuration>
               <imageName>https://hub.docker.com/stevelibonati/helloworld-eap-mvn</imageName>
 <dockerDirectory>${project.basedir}</dockerDirectory>
-<resources>
-<resource>
-<targetPath>/</targetPath>
-<directory>${project.build.directory}</directory>
-<include>${project.build.finalName}.war</include>
-</resource>
-</resources>
 </configuration> 
 			</plugin>
 		</plugins>
